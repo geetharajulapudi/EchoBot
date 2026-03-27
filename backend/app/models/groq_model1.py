@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "../.env"))
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-MODEL_URL = "https://api.groq.com/openai/v1/chat/completions"
+MODEL_URL = os.getenv("GROQ_API_URL")
 
 
 def call_groq(prompt: str, model="llama-3.3-70b-versatile"):

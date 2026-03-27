@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "../.env"))
 
 HF_API_KEY = os.getenv("HF_API_KEY")
-HF_URL = "https://router.huggingface.co/cerebras/v1/chat/completions"
+HF_URL = os.getenv("HF_API_URL")
 
 
 def call_hf(prompt: str, model="llama3.1-8b"):

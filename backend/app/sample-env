@@ -1,0 +1,4 @@
+GROQ_API_KEY="YOUR_API_KEY  "
+TAVILY_API_KEY="YOUR_API_KEY"
+HF_API_URL="https://router.huggingface.co/cerebras/v1/chat/completions"
+GROQ_API_URL="https://api.groq.com/openai/v1/chat/completions"
